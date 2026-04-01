@@ -1,0 +1,12 @@
+theme = GitLab Dark Grey
+
+font-family = Iosevka
+font-size = 14
+
+cursor-style = block
+cursor-style-blink = false
+shell-integration = zsh
+shell-integration-features = no-cursor
+
+keybind =ctrl+c=text:\x03
+keybind =ctrl+k=text:\x0c
