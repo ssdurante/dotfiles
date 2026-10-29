@@ -1,12 +1,24 @@
-theme = GitLab Dark Grey
-
-font-family = Iosevka
-font-size = 14
+# theme = Dayfox
+theme = Gruvbox Dark
+# theme = Ubuntu
 
 cursor-style = block
 cursor-style-blink = false
 shell-integration = zsh
 shell-integration-features = no-cursor
+# font-family = "Ubuntu Mono"
+# font-family = "JetBrains Mono"
+font-family = "Berkeley Mono Variable"
+# font-family = "Fira Code"
+# font-family = "IosevkaTerm Nerd Font"
+font-size = 18
 
-keybind =ctrl+c=text:\x03
-keybind =ctrl+k=text:\x0c
+macos-option-as-alt = true
+
+keybind = alt+left=unbind
+keybind = alt+right=unbind
+keybind = super+shift+arrow_up=unbind
+keybind = super+shift+arrow_down=unbind
+
+shell-integration-features = ssh-env,ssh-terminfo
+command = /bin/zsh -lc "exec /opt/homebrew/bin/zellij attach -c main"
