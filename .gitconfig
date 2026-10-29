@@ -1,32 +1,26 @@
 [user]
-    name = Samuel Durante
-    email = samueldurante.h@gmail.com
-    signingkey = /home/samuel/.ssh/id_ed25519.pub
+  name = Samuel Durante
+  email = samueldurante.h@gmail.com
+  signingkey = /Users/samuel/.ssh/id_ed25519.pub
 [init]
-    defaultBranch = main
+  defaultBranch = main
 [alias]
-    coma = checkout main
-    comain = checkout main
-    cob = checkout -b
-    poma = pull origin main
-    pomain = pull origin main
-    pu = push origin HEAD
-    puf = push origin HEAD --force-with-lease
-    co = checkout
-    cm = commit
-    cma = commit --amend --no-edit
-    ac = !git add -A && git commit
-    st = status
-    tags = tag -l
-    bd = branch -D
-    branches = branch -a
-    remotes = remote -v
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  coma = checkout main
+  cob = checkout -b
+  poma = pull origin main
+  pu = push origin HEAD
+  puf = push origin HEAD --force
+  co = checkout
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  cm = commit
+  ac = !git add -A && git commit
+  st = status
+  tags = tag -l
+  bd = branch -D
+  branches = branch -a
+  remotes = remote -v
+  cma = commit --amend --no-edit
 [gpg]
-	format = ssh
+  format = ssh
 [commit]
-	gpgsign = true
-[tag]
-	gpgsign = true
-[gpg "ssh"]
-	allowedSignersFile = /home/samuel/.ssh/allowed_signers
+  gpgsign = true
